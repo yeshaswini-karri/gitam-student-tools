@@ -1,0 +1,115 @@
+
+#container{
+    text-align: center;
+    width: 50%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 200px;
+    border-radius: 10px;
+    padding: 40px 100px;
+    background-color: #5f0505;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    font-weight: 600;
+}
+img {
+    width: 90%;
+}
+#addfile{
+    padding-bottom: 100px;
+    display: none;
+}
+
+.custom-file-upload {
+  color: rgb(255, 255, 255);
+    border: 2px solid #a62204;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 12px 25px;
+    cursor: pointer;
+}
+.reset{
+  margin:50px auto 50px 30px;
+  border-radius: 10px;
+  padding: 15px 20px;
+  font-size: 1.2em;
+  background-color: #9c160a;
+  color: #ffffff;
+  border: 2px solid #9c160a;
+  border-radius: 10px;  
+  border: none;
+  transition: all 0.3s ease;
+}
+.reset:hover {
+  cursor: pointer;
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+ul{
+  list-style: none;
+}
+
+#file-list{
+  background-color: rgb(142, 5, 5);
+  color: #ffffff;
+  border-radius: 10px;
+  overflow-x: hidden;
+  padding: 20px;
+  height: 5vh;
+  margin-bottom: 40px;
+}
+
+.filename{
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+.filename:hover{
+  padding: 18px;
+  background-color: #ffffff;
+  color: rgb(137, 8, 8);
+}
+.form-label{
+  color: #f6f6f6;
+  font-size:1.2rem;
+  margin-bottom: 15px;
+  pointer-events: none;
+}
+.light-mode{
+  background-color: #F5F8FF;
+  color: rgb(255, 252, 252);
+}
+.light-mode #container{
+  background-color: #FFF;
+}
+.light-mode .custom-file-upload{
+  color: #fffbfb;
+}
+.light-mode #file-list{
+  border: 2px solid #ffffff;
+}
+.light-mode .reset{
+  color: #ffffff;
+}
